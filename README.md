@@ -22,10 +22,10 @@ DB_URL='mongodb://john:doe@localhost:27017/databaseName'
 * After this, you can then start the server with the command: `npm start`.
 
 ### Testing
-Install Docker
-Install docker-compose
-Execute this command from terminal docker-compose build (This will build the doker file that has been defined and install all dependencies).
-Execute the command docker-compose up from terminal (This will start both the db and app container)
+* Install [Docker](https://www.docker.com/).
+* Install [docker-compose](http://docs.docker.com/compose/).
+* Execute this command from terminal `docker-compose build` (This will build the doker file that has been defined and install all dependencies).
+* Execute the command `docker-compose up` from terminal (This will start both the db and app container)
 To ensure that your installation is successful you'll need to run tests.
 The command: `npm test` makes this possible. It isn't functional right now, but once it's done you'll be notified via the README.
 
