@@ -1,0 +1,12 @@
+web:
+  build: .
+  build: ./mongodb
+  volumes:
+    - "./app:/src/app"
+  ports:
+    - "3000:3000"
+  links:
+    - "db:mongodb"
+
+db:
+  image: mongodb

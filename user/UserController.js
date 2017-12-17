@@ -7,6 +7,16 @@ var User = require('./user');
 
 // CREATES A NEW USER
 router.post('/', function (req, res) {
+   /* var user = new User();
+    user.name = req.body.name,
+    user.email = req.body.email, 
+    user.password = req.body.password
+
+    user.save(function(err){
+        if (err) return res.status(500).send("There was a problem adding the information to the database.");
+        res.status(200).send(user);
+        console.log(user);
+    });*/
     User.create({
             name : req.body.name,
             email : req.body.email, 
@@ -14,6 +24,7 @@ router.post('/', function (req, res) {
         },
         function (err, user) {
             if (err) return res.status(500).send("There was a problem adding the information to the database.");
+            console.log(user);
             res.status(200).send(user);
         });
 });
