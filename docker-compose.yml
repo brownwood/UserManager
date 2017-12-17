@@ -5,8 +5,8 @@ web:
     - "./app:/src/app"
   ports:
     - "3000:3000"
-  links:
-    - "db:mongodb"
+  #links:
+   # - "db:mongodb"
 
-db:
-  image: mongodb
+#db:
+# image: mongodb
